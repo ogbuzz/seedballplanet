@@ -52,8 +52,8 @@ cat > /etc/apache2/sites-available/seedballplanet.conf << EOF
 EOF
 
 # 5. Créer le certificat SSL (10 ans)
-echo "[5/9] Création du certificat SSL auto-signé (10 ans)..."
-openssl req -x509 -nodes -days 3650 -newkey rsa:2048 \
+echo "[5/9] Création du certificat SSL auto-signé (100 ans)..."
+openssl req -x509 -nodes -days 36500 -newkey rsa:2048 \
   -keyout /etc/ssl/private/seedballplanet.key \
   -out /etc/ssl/certs/seedballplanet.crt \
   -subj "/C=CA/ST=Quebec/L=Montreal/O=SeedballPlanet/CN=seedballplanet.local"
