@@ -1,0 +1,924 @@
+
+<!doctype html>
+<html lang="fr" data-theme="dark" class="has-navbar-fixed-top">
+  <head>
+	<meta charset="utf-8">
+
+
+	<script>
+
+		function viewBanner(){
+		 const bannerClosed = localStorage.getItem('banner-close') === 'true';
+		  document.documentElement.dataset.banner = bannerClosed ? 'off' : 'on';
+		}
+
+		viewBanner();
+
+	</script>
+
+
+
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		<title>SeedballPlanet – Test du Thème</title>
+
+	<style>
+			html[data-banner="off"] #banner {
+			  display: none;
+			}
+	</style>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+		<!-- CSS Bulma compilé -->
+		<link rel="stylesheet" href="/dist/theme.css">
+
+
+  </head>
+
+  <body>
+
+
+
+
+
+
+
+  <!-- SECTION EXEMPLES DE GRILLES & CARTES -->
+		<section class="section">
+				<div class="container">
+						<h2 class="title is-3 has-text-centered mb-6">Nos Solutions de Revégétalisation</h2>
+						<div class="columns is-multiline">
+
+								<!-- Carte Produit avec Icône dans le footer -->
+								<div class="column is-4">
+										<div class="card">
+												<div class="card-image">
+														<figure class="image is-4by3">
+																<img src="img/fleurs et aneth.jpg" alt="Jardin">
+														</figure>
+												</div>
+												<div class="card-content">
+														<div class="media">
+																<div class="media-content">
+																		<p class="title is-4">Kit Abeilles</p>
+																		<p class="subtitle is-6">Mélange mellifère</p>
+																</div>
+														</div>
+														<div class="content">
+																Un mélange de fleurs sauvages pour soutenir les pollinisateurs.
+																<br>
+																<time datetime="2026-01-13"><i class="material-icons is-size-7">calendar_today</i> Janvier 2026</time>
+														</div>
+														<footer class="card-footer">
+																<a href="#" class="card-footer-item has-text-primary">
+																		<i class="material-icons">shopping_cart</i>&nbsp;Acheter
+																</a>
+																<a href="#" class="card-footer-item">
+																		<i class="material-icons">info</i>&nbsp;Détails
+																</a>
+														</footer>
+												</div>
+										</div>
+								</div>
+
+								<!-- Statistiques avec Material Icons -->
+								<div class="column is-8">
+										<div class="box">
+												<h3 class="title is-4">Impact Environnemental</h3>
+												<nav class="level is-mobile">
+														<div class="level-item has-text-centered">
+																<div>
+																		<p class="heading">Seedballs</p>
+																		<p class="title has-text-primary">
+																				<i class="material-icons">grain</i> 150k
+																		</p>
+																</div>
+														</div>
+														<div class="level-item has-text-centered">
+																<div>
+																		<p class="heading">Zones</p>
+																		<p class="title has-text-success">
+																				<i class="material-icons">public</i> 42
+																		</p>
+																</div>
+														</div>
+														<div class="level-item has-text-centered">
+																<div>
+																		<p class="heading">CO2 Évité</p>
+																		<p class="title has-text-link">
+																				<i class="material-icons">cloud_done</i> 12t
+																		</p>
+																</div>
+														</div>
+												</nav>
+
+												<!-- Exemple : Message avec icône d'alerte -->
+												<article class="message is-warning is-light mt-4">
+														<div class="message-body">
+																<i class="material-icons vertical-align-middle">warning</i>
+																<strong>Alerte Sécheresse :</strong> Les plantations sont décalées de 2 semaines.
+														</div>
+												</article>
+										</div>
+								</div>
+						</div>
+				</div>
+		</section>
+
+
+   <!-- SECTION FORMULAIRE AVEC MATERIAL ICONS DANS LES INPUTS -->
+		<section class="section is-light">
+				<div class="container">
+						<div class="columns is-centered">
+								<div class="column is-6">
+										<div class="box">
+												<h3 class="title is-4 has-text-centered">Rejoignez le mouvement</h3>
+
+												<div class="field">
+														<label class="label">Nom complet</label>
+														<div class="control has-icons-left">
+																<input class="input" type="text" placeholder="Ex: Jean Giono">
+																<span class="icon is-small is-left">
+																		<i class="material-icons">person</i>
+																</span>
+														</div>
+												</div>
+
+												<div class="field">
+														<label class="label">Zone à reverdir</label>
+														<div class="control has-icons-left">
+																<div class="select is-fullwidth">
+																		<select>
+																				<option>Jardin privé</option>
+																				<option>Friche urbaine</option>
+																				<option>Forêt dégradée</option>
+																		</select>
+																</div>
+																<div class="icon is-small is-left">
+																		<i class="material-icons">place</i>
+																</div>
+														</div>
+												</div>
+
+												<div class="field">
+														<div class="control">
+																<button class="button is-success is-fullwidth">
+																		<span class="icon"><i class="material-icons">send</i></span>
+																		<span>Envoyer ma demande</span>
+																</button>
+														</div>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</section>
+
+
+
+
+
+
+		<!-- Contenu principal -->
+		<section class="hero is-small has-background-danger-15">
+		<div class="container">
+			<div class="hero-body">
+
+			<h1 class="title is-1">Thème Danger</h1>
+			<h2 class="subtitle">Faire germer la planète, une graine à la fois 🌱</h2>
+			<a class="button is-warning is-medium">Découvrir</a>
+		  </div>
+		  <div class="hero-footer">
+<i class="material-icons" style="font-size:3rem; color:green;">eco</i>
+<p class="title is-2">
+  <i class="material-icons" style="font-size:2rem; color:orange;">wb_sunny</i>
+</p>
+
+	  </div>
+		  </div>
+		</section>
+		<section class="hero is-small has-background-success-40">
+		  <div class="hero-body">
+				<h1 class="title">Thème Success <span class="has-text-success">SeedballPlanet</span></h1>
+				<h2 class="subtitle">Faire germer la planète, une graine à la fois 🌱</h2>
+				<a class="button is-warning is-medium">Découvrir</a>
+		  </div>
+		</section>
+		<section class="hero is-small has-background-link-15">
+		  <div class="hero-body">
+				<h1 class="title">Theme Link <span class="has-text-success">SeedballPlanet</span></h1>
+				<h2 class="subtitle">Faire germer la planète, une graine à la fois 🌱</h2>
+				<a class="button is-warning is-medium">Découvrir</a>
+		  </div>
+		</section>
+		<section class="hero is-info is-small has-background-info-40">
+		  <div class="hero-body">
+				<h1 class="title">Thème Info <span class="has-text-success">SeedballPlanet</span></h1>
+				<h2 class="subtitle">Faire germer la planète, une graine à la fois 🌱</h2>
+				<a class="button is-warning is-medium">Découvrir</a>
+		  </div>
+		</section>
+		<section class="hero is-small is-warning has-background-warning-30">
+		  <div class="hero-body">
+				<h1 class="title is-primary">Thème Warning <span class="has-text-warning">SeedballPlanet</span></h1>
+				<h2 class="subtitle">Faire germer la planète, une graine à la fois 🌱</h2>
+				<a class="button is-warning is-medium">Découvrir</a>
+		  </div>
+		</section>
+		<section class="hero is-small is-primary has-background-primary-25">
+		  <div class="hero-body">
+				<h1 class="title is-primary">Thème Primary <span class="has-text-warning">SeedballPlanet</span></h1>
+				<h2 class="subtitle">Faire germer la planète, une graine à la fois 🌱</h2>
+				<a class="button is-warning is-medium">Découvrir</a>
+		  </div>
+		</section>
+
+
+
+		<!-- Navbar Bulma -->
+	<nav class="navbar is-fixed-top" role="navigation" aria-label="principal">
+	  <div class="navbar-brand">
+			<a class="navbar-item logo" href="#">
+			  <img src="SEEDBALLPLANET.3.svg" alt="SeedballPlanet">
+			</a>
+			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+			   data-target="navMenu">
+			  <span aria-hidden="true"></span>
+			  <span aria-hidden="true"></span>
+			  <span aria-hidden="true"></span>
+			  <span aria-hidden="true"></span>
+			</a>
+	  </div>
+
+	  <div id="navMenu" class="navbar-menu">
+			<div class="navbar-start">
+			  <a class="navbar-item" href="#"><i class="material-icons">home</i></a>
+			  <a class="navbar-item" href="#">Accueil</a>
+			  <a class="navbar-item" href="#">Mission</a>
+			  <a class="navbar-item" href="#">Projets</a>
+			  <a class="navbar-item" href="#">Contact</a>
+			</div>
+	  </div>
+	</nav>
+
+
+
+
+<div id="banner" class="notification is-marginless is-radiusless mb-0">
+  <div class="container">
+    <!-- On utilise is-mobile pour empêcher l'empilement vertical -->
+    <div class="columns is-mobile is-vcentered">
+
+      <div class="column">
+        <p class="is-size-7-mobile">
+<!--
+          Welcome! Would you like the
+-->
+		Bienvenue! Voulez vous voir la
+          <a href="/fr/" class="is-underlined has-text-weight-bold">Version Française</a>?
+        </p>
+      </div>
+
+      <div class="column is-narrow">
+        <button id="close-banner" class="delete is-small-mobile is-medium-tablet"></button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<section id="pitch" class="hero is-fullheight  has-background--warning-15 has-text-warning-invert">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+
+      <!-- Opening -->
+      <h1 class="title is-2 has-text-weight-bold">
+        For millennia — even before farming —
+      </h1>
+      <p class="subtitle is-4">
+        humans practiced a simple and powerful method to plant forests of food:
+        a small hollow in the soil, a touch of humus, a pinch of seeds.
+      </p>
+      <p class="is-size-5">
+        That touch of fertility beneath each cluster of seeds sheltered and strengthened every sprout.
+      </p>
+
+      <!-- Mission -->
+      <div class="content mt-6">
+        <h2 class="title is-3 has-text-weight-semibold">
+          SeedballPlanet revives humanity’s simplest technology for rewilding the earth.
+        </h2>
+        <p class="is-size-5">
+          Our seedballs of clay, charcoal, and compost are the food forests of the future —
+          ready to re‑plant even the most exhausted or invaded lands — almost no tools or irrigation.
+        </p>
+        <p class="is-size-5 has-text-weight-semibold">
+          We sell Seedballs — but anyone can make seedballs absolutely free.
+        </p>
+        <p class="is-size-5">
+          We’re making food forestry global — with nothing more than a pinch of seeds and living compost.
+        </p>
+      </div>
+
+      <!-- Quote -->
+      <blockquote class="has-text-weight-semibold is-size-4 mt-5 has-text-warning-45">
+        “You want to reverse the damage? Just plant forests of foods.”
+      </blockquote>
+
+      <!-- Closing -->
+      <div class="mt-6">
+        <p class="title is-4">
+          From one hand to a million drones, it’s the same act of renewal:
+        </p>
+        <p class="is-size-5 has-text-weight-semibold">
+          Plant the seed, feed the earth, let life do the rest.
+        </p>
+        <p class="mt-4">
+          <a href="https://SeedballPlanet.com" class="has-text-primary has-text-weight-bold">
+            SeedballPlanet.com — Everything for global regeneration.
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <h1 class="title is-3">Bulma <code>warning</code> palette preview</h1>
+    <p class="subtitle is-5">Each swatch uses <code>has-background-warning‑XX</code></p>
+
+    <div class="columns is-multiline is-mobile is-variable is-1 mt-5">
+      <!-- Loop common shades -->
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-00 has-text-warning-00-invert">warning‑00</div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-05 has-text-warning-05-invert">warning‑05</div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-10 has-text-warning-10-invert">warning‑10</div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-15 has-text-warning-15-invert">warning‑15</div>
+      </div>
+
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-20 has-text-warning-20-invert">warning‑20</div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-25 has-text-warning-25-invert">warning‑25</div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-30 has-text-warning-30-invert">warning‑30</div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-35 has-text-warning-35-invert">warning‑35</div>
+      </div>
+
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-40 has-text-warning-40-invert">warning‑40</div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-45 has-text-warning-45-invert">warning‑45</div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-50 has-text-warning-50-invert">warning‑50</div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-55 has-text-warning-55-invert">warning‑55</div>
+      </div>
+
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-60 has-text-warning-60-invert">warning‑60</div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-65 has-text-warning-65-invert">warning‑65</div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-70 has-text-warning-70-invert">warning‑70</div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-75 has-text-warning-75-invert">warning‑75</div>
+      </div>
+
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-80 has-text-warning-80-invert">warning‑80</div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-85 has-text-warning-85-invert">warning‑85</div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-90 has-text-warning-90-invert">warning‑90</div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-95 has-text-warning-95-invert">warning‑95</div>
+      </div>
+
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-100 has-text-warning-100-invert">warning‑100</div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-light has-text-warning-light-invert">warning‑light</div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-dark has-text-warning-dark-invert">warning‑dark</div>
+      </div>
+      <div class="column is-one-quarter">
+        <div class="box has-background-warning-bold has-text-warning-bold-invert">warning‑bold</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <h1 class="title is-3">Bulma <code>warning</code> Gradient Preview</h1>
+    <p class="subtitle is-5">Scroll to view the full warm‑amber spectrum</p>
+  </div>
+</section>
+
+<!-- Gradient stack -->
+<section class="section is-paddingless">
+  <div class="columns is-multiline is-gapless is-mobile">
+    <div class="column is-full has-background-warning-00 has-text-warning-00-invert py-5">warning‑00</div>
+    <div class="column is-full has-background-warning-05 has-text-warning-05-invert py-5">warning‑05</div>
+    <div class="column is-full has-background-warning-10 has-text-warning-10-invert py-5">warning‑10</div>
+    <div class="column is-full has-background-warning-15 has-text-warning-15-invert py-5">warning‑15</div>
+    <div class="column is-full has-background-warning-20 has-text-warning-20-invert py-5">warning‑20</div>
+    <div class="column is-full has-background-warning-25 has-text-warning-25-invert py-5">warning‑25</div>
+    <div class="column is-full has-background-warning-30 has-text-warning-30-invert py-5">warning‑30</div>
+    <div class="column is-full has-background-warning-35 has-text-warning-35-invert py-5">warning‑35</div>
+    <div class="column is-full has-background-warning-40 has-text-warning-40-invert py-5">warning‑40</div>
+    <div class="column is-full has-background-warning-45 has-text-warning-45-invert py-5">warning‑45</div>
+    <div class="column is-full has-background-warning-50 has-text-warning-50-invert py-5">warning‑50</div>
+    <div class="column is-full has-background-warning-55 has-text-warning-55-invert py-5">warning‑55</div>
+    <div class="column is-full has-background-warning-60 has-text-warning-60-invert py-5">warning‑60</div>
+    <div class="column is-full has-background-warning-65 has-text-warning-65-invert py-5">warning‑65</div>
+    <div class="column is-full has-background-warning-70 has-text-warning-70-invert py-5">warning‑70</div>
+    <div class="column is-full has-background-warning-75 has-text-warning-75-invert py-5">warning‑75</div>
+    <div class="column is-full has-background-warning-80 has-text-warning-80-invert py-5">warning‑80</div>
+    <div class="column is-full has-background-warning-85 has-text-warning-85-invert py-5">warning‑85</div>
+    <div class="column is-full has-background-warning-90 has-text-warning-90-invert py-5">warning‑90</div>
+    <div class="column is-full has-background-warning-95 has-text-warning-95-invert py-5">warning‑95</div>
+    <div class="column is-full has-background-warning-100 has-text-warning-100-invert py-5">warning‑100</div>
+    <div class="column is-full has-background-warning-dark has-text-warning-dark-invert py-5">warning‑dark</div>
+    <div class="column is-full has-background-warning-bold has-text-warning-bold-invert py-5">warning‑bold</div>
+  </div>
+</section>
+
+
+
+
+		<!-- Contenu principal -->
+		<section class="hero is-medium is-info">
+		<div class="container">
+			<div class="hero-body">
+
+			<h1 class="title is-1">Bienvenue sur <span class="has-text-danger is-size-5">SeedballPlanet</span></h1>
+			<h2 class="subtitle">Faire germer la planète, une graine à la fois 🌱</h2>
+			<a class="button is-warning is-medium">Découvrir</a>
+		  </div>
+		  <div class="hero-footer">
+<i class="material-icons" style="font-size:3rem; color:green;">eco</i>
+<p class="title is-2">
+  <i class="material-icons" style="font-size:2rem; color:orange;">wb_sunny</i>
+</p>
+
+	  </div>
+		  </div>
+		</section>
+		<section class="hero is-medium is-success">
+		  <div class="hero-body">
+				<h1 class="title">Success <span class="has-text-success">SeedballPlanet</span></h1>
+				<h2 class="subtitle">Faire germer la planète, une graine à la fois 🌱</h2>
+				<a class="button is-warning is-medium">Découvrir</a>
+		  </div>
+		</section>
+		<section class="hero is-medium is-danger">
+		  <div class="hero-body">
+				<h1 class="title">Danger <span class="has-text-success">SeedballPlanet</span></h1>
+				<h2 class="subtitle">Faire germer la planète, une graine à la fois 🌱</h2>
+				<a class="button is-warning is-medium">Découvrir</a>
+		  </div>
+		</section>
+		<section class="hero is-medium is-link">
+		  <div class="hero-body">
+				<h1 class="title">Link sur <span class="has-text-success">SeedballPlanet</span></h1>
+				<h2 class="subtitle">Faire germer la planète, une graine à la fois 🌱</h2>
+				<a class="button is-warning is-medium">Découvrir</a>
+		  </div>
+		</section>
+		<section class="hero is-medium is-info">
+		  <div class="hero-body">
+				<h1 class="title">Info sur <span class="has-text-success">SeedballPlanet</span></h1>
+				<h2 class="subtitle">Faire germer la planète, une graine à la fois 🌱</h2>
+				<a class="button is-warning is-medium">Découvrir</a>
+		  </div>
+		</section>
+		<section class="hero is-medium is-warning">
+		  <div class="hero-body">
+				<h1 class="title is-primary">Primary Warning <span class="has-text-warning">SeedballPlanet</span></h1>
+				<h2 class="subtitle">Faire germer la planète, une graine à la fois 🌱</h2>
+				<a class="button is-warning is-medium">Découvrir</a>
+		  </div>
+		</section>
+
+  <!-- SECTION EXEMPLES DE GRILLES & CARTES -->
+		<section class="section">
+				<div class="container">
+						<h2 class="title is-3 has-text-centered mb-6">Nos Solutions de Revégétalisation</h2>
+						<div class="columns is-multiline">
+
+								<!-- Carte Produit avec Icône dans le footer -->
+								<div class="column is-4">
+										<div class="card">
+												<div class="card-image">
+														<figure class="image is-4by3">
+																<img src="img/fleurs et aneth.jpg" alt="Jardin">
+														</figure>
+												</div>
+												<div class="card-content">
+														<div class="media">
+																<div class="media-content">
+																		<p class="title is-4">Kit Abeilles</p>
+																		<p class="subtitle is-6">Mélange mellifère</p>
+																</div>
+														</div>
+														<div class="content">
+																Un mélange de fleurs sauvages pour soutenir les pollinisateurs.
+																<br>
+																<time datetime="2026-01-13"><i class="material-icons is-size-7">calendar_today</i> Janvier 2026</time>
+														</div>
+														<footer class="card-footer">
+																<a href="#" class="card-footer-item has-text-primary">
+																		<i class="material-icons">shopping_cart</i>&nbsp;Acheter
+																</a>
+																<a href="#" class="card-footer-item">
+																		<i class="material-icons">info</i>&nbsp;Détails
+																</a>
+														</footer>
+												</div>
+										</div>
+								</div>
+
+								<!-- Statistiques avec Material Icons -->
+								<div class="column is-8">
+										<div class="box">
+												<h3 class="title is-4">Impact Environnemental</h3>
+												<nav class="level is-mobile">
+														<div class="level-item has-text-centered">
+																<div>
+																		<p class="heading">Seedballs</p>
+																		<p class="title has-text-primary">
+																				<i class="material-icons">grain</i> 150k
+																		</p>
+																</div>
+														</div>
+														<div class="level-item has-text-centered">
+																<div>
+																		<p class="heading">Zones</p>
+																		<p class="title has-text-success">
+																				<i class="material-icons">public</i> 42
+																		</p>
+																</div>
+														</div>
+														<div class="level-item has-text-centered">
+																<div>
+																		<p class="heading">CO2 Évité</p>
+																		<p class="title has-text-link">
+																				<i class="material-icons">cloud_done</i> 12t
+																		</p>
+																</div>
+														</div>
+												</nav>
+
+												<!-- Exemple : Message avec icône d'alerte -->
+												<article class="message is-warning is-light mt-4">
+														<div class="message-body">
+																<i class="material-icons vertical-align-middle">warning</i>
+																<strong>Alerte Sécheresse :</strong> Les plantations sont décalées de 2 semaines.
+														</div>
+												</article>
+										</div>
+								</div>
+						</div>
+				</div>
+		</section>
+
+
+   <!-- SECTION FORMULAIRE AVEC MATERIAL ICONS DANS LES INPUTS -->
+		<section class="section is-light">
+				<div class="container">
+						<div class="columns is-centered">
+								<div class="column is-6">
+										<div class="box">
+												<h3 class="title is-4 has-text-centered">Rejoignez le mouvement</h3>
+
+												<div class="field">
+														<label class="label">Nom complet</label>
+														<div class="control has-icons-left">
+																<input class="input" type="text" placeholder="Ex: Jean Giono">
+																<span class="icon is-small is-left">
+																		<i class="material-icons">person</i>
+																</span>
+														</div>
+												</div>
+
+												<div class="field">
+														<label class="label">Zone à reverdir</label>
+														<div class="control has-icons-left">
+																<div class="select is-fullwidth">
+																		<select>
+																				<option>Jardin privé</option>
+																				<option>Friche urbaine</option>
+																				<option>Forêt dégradée</option>
+																		</select>
+																</div>
+																<div class="icon is-small is-left">
+																		<i class="material-icons">place</i>
+																</div>
+														</div>
+												</div>
+
+												<div class="field">
+														<div class="control">
+																<button class="button is-success is-fullwidth">
+																		<span class="icon"><i class="material-icons">send</i></span>
+																		<span>Envoyer ma demande</span>
+																</button>
+														</div>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</section>
+
+
+
+		<!-- FOOTER RICHE (Test des liens et alignements) -->
+		<footer class="footer">
+		  <div class="container">
+				<div class="columns">
+				  <div class="column is-4">
+						<h4 class="title is-5">SeedballPlanet</h4>
+						<p>Technologie de reforestation accessible à tous pour un futur plus vert.</p>
+				  </div>
+				  <div class="column is-2 is-offset-2">
+						<h4 class="title is-6">Liens</h4>
+						<ul>
+						  <li><a href="#">Boutique</a></li>
+						  <li><a href="#">Blog</a></li>
+						  <li><a href="#">FAQ</a></li>
+						</ul>
+				  </div>
+				  <div class="column is-4">
+						<h4 class="title is-6">Suivez-nous</h4>
+						<div class="tags">
+						  <span class="tag is-dark">Instagram</span>
+						  <span class="tag is-dark">X</span>
+						  <span class="tag is-primary">Newsletter</span>
+						</div>
+				  </div>
+				</div>
+				<hr>
+				<div class="content has-text-centered is-size-7">
+				  <p>&copy; 2026 SeedballPlanet. Tous droits réservés. Design par Nature.</p>
+				</div>
+		  </div>
+		</footer>
+
+<section class="section">
+  <div class="container">
+		<div class="columns is-centered">
+		  <div class="column is-8">
+				<div class="card">
+				  <div class="card-image">
+						<figure class="image is-4by3">
+						  <img src="img/drone-seedballs-canada.jpeg" alt="Placeholder image">
+						</figure>
+				  </div>
+				  <div class="card-content">
+						<div class="media">
+						  <div class="media-content">
+								<p class="title is-4">Notre Mission</p>
+						  </div>
+						</div>
+						<div class="content">
+						  Planter des graines, restaurer les écosystèmes, et inspirer chacun à agir pour la planète.
+						</div>
+				  </div>
+				</div>
+		  </div>
+		</div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container">
+		<h2 class="title is-3 has-text-centered mb-6">Ce que nous faisons</h2>
+		<div class="columns is-centered">
+		  <div class="column is-one-third has-text-centered">
+				<span class="icon is-large has-text-primary">
+				  <i class="fas fa-seedling fa-3x"></i>
+				</span>
+				<p class="title is-5 mt-3">Création de Seedballs</p>
+				<p>Des mélanges de graines locales pour chaque besoin.</p>
+		  </div>
+		  <div class="column is-one-third has-text-centered">
+				<span class="icon is-large has-text-info">
+				  <i class="fas fa-hand-holding-heart fa-3x"></i>
+				</span>
+				<p class="title is-5 mt-3">Projets Communautaires</p>
+				<p>Soutenir les initiatives de reforestation locales.</p>
+		  </div>
+		  <div class="column is-one-third has-text-centered">
+				<span class="icon is-large has-text-success">
+				  <i class="fas fa-graduation-cap fa-3x"></i>
+				</span>
+				<p class="title is-5 mt-3">Éducation et Sensibilisation</p>
+				<p>Partager le savoir pour un avenir plus vert.</p>
+		  </div>
+		</div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container">
+		<div class="columns is-centered">
+		  <div class="column is-8">
+				<h2 class="title is-3 has-text-centered mb-6">Ce qu'ils en disent</h2>
+				<div class="box">
+				  <blockquote>
+						"Participer à SeedballPlanet a changé ma vision de la reforestation. C'est simple, efficace et accessible à tous !"
+						<br>
+						<cite>- Sophie L., Volontaire</cite>
+				  </blockquote>
+				</div>
+		  </div>
+		</div>
+  </div>
+</section>
+
+
+
+<!-- BLOG SECTION -->
+<section class="section">
+		<div class="container">
+				<div class="columns is-variable is-8">
+
+						<!-- CONTENU PRINCIPAL (Articles) -->
+						<div class="column is-8">
+
+								<!-- Article à la Une (Test de grand format) -->
+								<article class="box is-paddingless is-clipped mb-6">
+										<div class="columns is-gapless">
+												<div class="column is-7">
+														<figure class="image is-4by3">
+																<img src="img/mesclun.jpg" alt="Plantation">
+														</figure>
+												</div>
+												<div class="column is-5">
+														<div class="p-5">
+																<span class="tag is-primary is-light mb-3">Guide Pratique</span>
+																<h3 class="title is-3">Comment lancer vos seedballs cet automne ?</h3>
+																<p class="content">
+																		Découvrez le timing parfait et les meilleures zones pour maximiser le taux de germination de vos bombes de graines...
+																</p>
+																<a class="button is-link is-small" href="#">Lire la suite</a>
+														</div>
+												</div>
+										</div>
+								</article>
+
+								<!-- Grille d'articles secondaires -->
+								<div class="columns is-multiline">
+										<!-- Article 1 -->
+										<div class="column is-6">
+												<div class="card is-shadowless" style="border: 1px solid var(--border-color)">
+														<div class="card-image">
+																<figure class="image is-16by9">
+																		<img src="img/tournesol et pollinisateurs piquants.jpg" alt="Graines">
+																</figure>
+														</div>
+														<div class="card-content">
+																<p class="is-size-7 has-text-grey">12 Janvier 2026</p>
+																<h4 class="title is-5">Les 5 meilleures espèces mellifères</h4>
+																<p class="content is-size-6">Pourquoi la biodiversité dépend de ces fleurs précises...</p>
+																<a href="#" class="has-text-primary has-text-weight-bold">En savoir plus →</a>
+														</div>
+												</div>
+										</div>
+										<!-- Article 2 -->
+										<div class="column is-6">
+												<div class="card is-shadowless" style="border: 1px solid var(--border-color)">
+														<div class="card-image">
+																<figure class="image is-16by9">
+																		<img src="img/seedball-world-jan-2020-sans-logo.png" alt="Champ">
+																</figure>
+														</div>
+														<div class="card-content">
+																<p class="is-size-7 has-text-grey">10 Janvier 2026</p>
+																<h4 class="title is-5">Reforestation urbaine : le défi</h4>
+																<p class="content is-size-6">Utiliser les friches industrielles pour créer des micro-forêts...</p>
+																<a href="#" class="has-text-primary has-text-weight-bold">En savoir plus →</a>
+														</div>
+												</div>
+										</div>
+								</div>
+
+								<!-- Pagination (Test du style des chiffres) -->
+								<nav class="pagination is-centered mt-6" role="navigation" aria-label="pagination">
+										<a class="pagination-previous">Précédent</a>
+										<a class="pagination-next">Suivant</a>
+										<ul class="pagination-list">
+												<li><a class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a></li>
+												<li><a class="pagination-link" aria-label="Goto page 2">2</a></li>
+												<li><span class="pagination-ellipsis">&hellip;</span></li>
+												<li><a class="pagination-link" aria-label="Goto page 10">10</a></li>
+										</ul>
+								</nav>
+						</div>
+
+						<!-- BARRE LATÉRALE (Sidebar) -->
+						<aside class="column is-4">
+								<div class="box">
+										<h4 class="title is-5 mb-4">Rechercher</h4>
+										<div class="field has-addons">
+												<div class="control is-expanded">
+														<input class="input" type="text" placeholder="Un sujet...">
+												</div>
+												<div class="control">
+														<button class="button is-primary">🔍</button>
+												</div>
+										</div>
+								</div>
+
+								<div class="box">
+										<h4 class="title is-5 mb-4">Catégories</h4>
+										<div class="tags">
+												<a class="tag is-medium is-rounded">Biodiversité</a>
+												<a class="tag is-medium is-rounded">Tutoriels</a>
+												<a class="tag is-medium is-rounded">Actualités</a>
+												<a class="tag is-medium is-rounded">Science</a>
+												<a class="tag is-medium is-rounded">Communauté</a>
+										</div>
+								</div>
+
+								<div class="box has-background-danger">
+										<h4 class="title is-5 has-text-primary-dark">Projet du mois</h4>
+										<p class="content is-size-6">
+												Nous aidons actuellement à la replantation de la Vallée Verte.
+										</p>
+										<progress class="progress is-primary" value="75" max="100">75%</progress>
+										<p class="is-size-7">Objectif : 5000 Seedballs (75% atteint)</p>
+								</div>
+						</aside>
+
+				</div>
+		</div>
+</section>
+
+
+		<section class="section">
+		  <div class="container content">
+				<h2 class="title is-3">Notre Mission</h2>
+				<p>
+				  Concevoir des solutions simples et accessibles pour reverdir les paysages, restaurer les sols et reconnecter l’humain à la nature.
+				</p>
+		  </div>
+		</section>
+
+		<section class="footer">
+				<button id="themeToggle" class="theme-toggle" aria-label="Changer de thème">🌙</button>
+				<button id="resetTheme" class="button is-small">Auto</button>
+
+				<button id="clearInfos" class="button is-small">Effacer les données personelles</button>
+
+		</section>
+	<script src="/dist/app.1.js"></script>
+  </body>
+</html>

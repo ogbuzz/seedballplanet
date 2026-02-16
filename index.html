@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="fr" data-theme="" class="has-navbar-fixed-top">
+
+  <head>
+
+		<script>
+		    function viewBanner() {
+		        try {
+		            const bannerClosed = localStorage.getItem('banner-close') === 'true';
+		            document.documentElement.dataset.banner = bannerClosed ? 'off' : 'on';
+		        } catch (e) {
+		            document.documentElement.dataset.banner = 'on';
+		        }
+		    }
+
+		    viewBanner();
+
+			!function setTheme() {
+			  const root = document.documentElement;
+			  try {
+			    const saved = localStorage.getItem("theme");
+			    const systemDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+			    root.dataset.theme = (saved === "dark" || saved === "light")
+			      ? saved
+			      : (systemDark ? "dark" : "light");
+			  } catch (e) {
+			    root.dataset.theme = "light";
+			  }
+			}();
+
+		</script>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <title>SeedballPlanet – Régénération des écosystèmes et forêts nourricières</title>
+    <meta name="description" content="Restaurez la fertilité de la Terre avec SeedballPlanet. Créez des forêts nourricières grâce à nos boules de graines (seedballs) inspirées de méthodes ancestrales.">
+
+    <!-- URL Canonique (Ajout du / final pour cohérence) -->
+    <link rel="canonical" href="https://www.seedballplanet.com/">
+
+    <!-- Balises Hreflang (Une seule version propre avec www et /) -->
+    <link rel="alternate" hreflang="fr" href="https://www.seedballplanet.com/">
+    <link rel="alternate" hreflang="en" href="https://www.seedballplanet.com/en/">
+    <link rel="alternate" hreflang="x-default" href="https://www.seedballplanet.com/">
+
+    <!-- Open Graph (URLs synchronisées) -->
+    <meta property="og:locale" content="fr_CA">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SeedballPlanet – Forêts Nourricières">
+    <meta property="og:url" content="https://www.seedballplanet.com/">
+    <meta property="og:description" content="Rejoignez-nous pour restaurer la fertilité et la productivité alimentaire de la Terre...">
+	<meta property="og:image" content="https://www.seedballplanet.com/images/og-image-fr.jpg">
+
+    <link rel="stylesheet" href="/dist/theme.css">
+
+  </head>
+
+
+  <body>
+
+	<nav class="navbar is-fixed-top" role="navigation" aria-label="principal">
+	  <div class="navbar-brand">
+			<a class="navbar-item logo" href="/">
+			  <img src="/SEEDBALLPLANET.3.svg" alt="Accueil SeedballPlanet">
+			</a>
+			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+			   data-target="navMenu">
+			  <span aria-hidden="true"></span>
+			  <span aria-hidden="true"></span>
+			  <span aria-hidden="true"></span>
+			  <span aria-hidden="true"></span>
+			</a>
+	  </div>
+
+	  <div id="navMenu" class="navbar-menu">
+			<div class="navbar-start">
+			  <a class="navbar-item" href="#">Accueil</a>
+			  <a class="navbar-item" href="#">Mission</a>
+			  <a class="navbar-item" href="#">Projets</a>
+			  <a class="navbar-item" href="#">Contact</a>
+			</div>
+	  </div>
+	</nav>
+
+<div id="banner" role="complementary" aria-label="Choix de langue" class="notification is-marginless is-radiusless mb-0">
+  <div class="container">
+    <div class="columns is-mobile is-vcentered">
+      <div class="column">
+        <p class="is-size-7-mobile">
+		Welcome! Do you want to see the
+			<a href="/en/" hreflang="en" lang="en" class="is-underlined has-text-weight-bold">English version?</a>
+        </p>
+      </div>
+      <div class="column is-narrow">
+        <button id="close-banner" aria-label="Fermer la bannière" class="delete is-small-mobile is-medium-tablet"></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="pitch" class="hero is-medium" aria-label="Introduction et mission de SeedballPlanet">
+  <div class="hero-head p-6 has-background-success has-text-white">
+    <div class="container">
+      <h1 class="title is-size-1-desktop is-size-3-tablet has-text-weight-light">
+        Joignez-vous à nous pour restaurer la fertilité et la productivité alimentaire de la Terre en créant des forêts nourricières grâce à des méthodes anciennes, presque sans outils.
+      </h1>
+    </div>
+  </div>
+
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-vcentered is-variable is-8">
+
+        <div class="column is-7">
+          <div class="content is-size-4-desktop is-size-5-mobile">
+            <p>Pendant des milliers d'années, bien avant l'agriculture, les humains utilisaient une technique simple pour régénérer les écosystèmes et cultiver des aliments : placer une pincée de graines mélangées à de l'humus dans de petites cavités du sol et laisser la nature faire la majeure partie du travail. Cette approche ancestrale a créé d'abondantes « forêts nourricières », comme celles que l'on trouve encore en Amazonie et en Asie.</p>
+
+            <p>SeedballPlanet ravive cette méthode ancienne avec une approche moderne : fabriquer des boules d'argile, de charbon et de compost contenant des graines de légumes-feuilles à croissance rapide et de fines-herbes, fruits et champignons. Ces "mini‑écosystèmes" autonomes peuvent régénérer des sols dégradés presque sans outils, irrigation et entretien. Commencez à récolter des verdures fraîches immédiatement tout en construisant l'écosystème autosuffisant de demain.</p>
+
+            <p class="is-size-4">
+              Notre mission : <strong>le reboisement alimentaire mondial</strong> en transformant la Terre en forêts nourricières autosuffisantes.
+            </p>
+          </div>
+        </div>
+
+        <div class="column is-5">
+          <div class="box has-background-warning has-shadow">
+            <h3 class="subtitle is-size-3-desktop is-size-4-mobile has-text-weight-semibold has-text-centered">
+              Commencez dès aujourd'hui : achetez des boules de graines prêtes à l'emploi – ou apprenez à en fabriquer gratuitement.
+            </h3>
+            <div class="buttons is-centered">
+              <a href="#shop" class="button is-success is-large is-fullwidth">Commencer</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-foot pb-6">
+    <div class="container">
+      <hr>
+      <blockquote class="has-text-centered is-italic">
+        <p class="is-size-4 has-text-grey is-family-secondary">« Vous voulez inverser les dégâts?<br>Plantez simplement des forêts de nourriture. »</p>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<div id="parameters" class="box mt-6">
+	<h1 class="title is-3">Paramètres :</h1>
+
+	<div class="buttons">
+		<button id="themeToggle" class="button is-medium theme-toggle" aria-label="Changer de thème">🌙</button>
+		<button id="resetTheme" class="button is-medium">Auto 🌙️️ ☀️</button>
+	</div>
+
+	<div class="buttons">
+		<button id="clearInfos" class="button is-medium is-danger title is-6">Effacer les données personnelles</button>
+	</div>
+</div>
+
+<hr>
+<div class="content has-text-centered is-size-7">
+  <p>&copy; 2026 Jardin Odonata – Montréal QC CANADA H2T 1S8</p>
+</div>
+
+<script src="/dist/app.1.js"></script>
+</body>
+</html>

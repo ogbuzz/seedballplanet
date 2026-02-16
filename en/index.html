@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en" data-theme="" class="has-navbar-fixed-top">
+  <head>
+
+		<script>
+		    function viewBanner() {
+		        try {
+		            const bannerClosed = localStorage.getItem('banner-close') === 'true';
+		            document.documentElement.dataset.banner = bannerClosed ? 'off' : 'on';
+		        } catch (e) {
+		            document.documentElement.dataset.banner = 'on';
+		        }
+		    }
+
+		    viewBanner();
+
+			!function setTheme() {
+			  const root = document.documentElement;
+			  try {
+			    const saved = localStorage.getItem("theme");
+			    const systemDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+			    root.dataset.theme = (saved === "dark" || saved === "light")
+			      ? saved
+			      : (systemDark ? "dark" : "light");
+			  } catch (e) {
+			    root.dataset.theme = "light";
+			  }
+			}();
+
+		</script>
+
+
+	<meta charset="utf-8">
+	<title>SeedballPlanet – English model</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+
+	<link rel="canonical" href="https://www.seedballplanet.com/en/" />
+
+<!-- CORRECT (Parfaite réciprocité avec la page française) -->
+<link rel="alternate" hreflang="fr" href="https://www.seedballplanet.com/" />
+<link rel="alternate" hreflang="en" href="https://www.seedballplanet.com/en/" />
+<link rel="alternate" hreflang="x-default" href="https://www.seedballplanet.com/" />
+
+
+    <meta name="description" content="Restore the Earth's fertility with SeedballPlanet. Create food forests with our seedballs inspired by ancestral methods.">
+
+
+
+	<!-- Open Graph pour réseaux sociaux (Version Anglaise) -->
+	<meta property="og:locale" content="en_US">
+	<meta property="og:locale:alternate" content="fr_CA">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="SeedballPlanet – Food Forest Reforestation">
+	<meta property="og:url" content="https://www.seedballplanet.com/en/">
+	<meta property="og:description" content="Restore Earth's fertility and grow your own food forest with ancient seedball methods.">
+
+	<meta property="og:image" content="https://www.seedballplanet.com/images/og-image-fr.jpg">
+
+
+	<!-- CSS Bulma compilé -->
+	<link rel="stylesheet" href="/dist/theme.css">
+
+  </head>
+
+  <body>
+
+	<nav class="navbar is-fixed-top" role="navigation" aria-label="principal">
+	  <div class="navbar-brand">
+			<a class="navbar-item logo" href="/en/">
+			  <img src="/SEEDBALLPLANET.3.svg" alt="SeedballPlanet homepage">
+			</a>
+			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+			   data-target="navMenu">
+			  <span aria-hidden="true"></span>
+			  <span aria-hidden="true"></span>
+			  <span aria-hidden="true"></span>
+			  <span aria-hidden="true"></span>
+			</a>
+	  </div>
+
+	  <div id="navMenu" class="navbar-menu">
+			<div class="navbar-start">
+			  <a class="navbar-item" href="#">Home</a>
+			  <a class="navbar-item" href="#">Mission</a>
+			  <a class="navbar-item" href="#">Projects</a>
+			  <a class="navbar-item" href="#">Contact</a>
+			</div>
+	  </div>
+	</nav>
+
+<div id="banner" role="complementary" aria-label="Language choice" class="notification is-marginless is-radiusless mb-0">
+  <div class="container">
+    <div class="columns is-mobile is-vcentered">
+      <div class="column">
+        <p class="is-size-7-mobile">
+		Bienvenue! Voulez-vous voir la
+          <a href="/" hreflang="fr" lang="fr" class="is-underlined has-text-weight-bold">version française ?</a>
+        </p>
+      </div>
+      <div class="column is-narrow">
+        <button id="close-banner" aria-label="Close banner" class="delete is-small-mobile is-medium-tablet"></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="pitch" class="hero is-medium" aria-label="SeedballPlanet introduction and mission">
+  <div class="hero-head p-6 has-background-success has-text-white">
+    <div class="container">
+      <h1 class="title is-size-1-desktop is-size-3-tablet has-text-weight-light">
+        Join us in restoring Earth's fertility and food productivity by starting food-forests using ancient, nearly tool‑free methods.
+      </h1>
+    </div>
+  </div>
+
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-vcentered is-variable is-8">
+
+        <div class="column is-7">
+          <div class="content is-size-4-desktop is-size-5-mobile">
+            <p>For thousands of years, long before agriculture, humans used a simple technique to regenerate ecosystems and grow food: placing a pinch of seeds mixed with humus in small soil hollows and letting nature do most of the work. This ancient approach created abundant "food forests", such as those still found in the Amazon and Asia.</p>
+
+            <p>SeedballPlanet revives this ancient method with modern practicality – making clay, charcoal, and compost seedballs containing fast&nbsp;growing leafy greens, herbs, fruits, and mushroom seeds. These self‑contained "mini ecosystems" can re‑grow degraded land with almost no tools, irrigation, or maintenance. Start eating fresh greens immediately while building tomorrow's self-sustaining ecosystem.</p>
+
+            <p class="is-size-4">
+              Our mission: <strong>global food reforestation</strong> by turning Earth into self-sustaining food forests.
+            </p>
+          </div>
+        </div>
+
+        <div class="column is-5">
+          <div class="box has-background-warning has-shadow">
+            <h3 class="subtitle is-size-3-desktop is-size-4-mobile has-text-weight-semibold has-text-centered">
+              Start today: buy ready-made seedballs – or learn to craft your own for free.
+            </h3>
+            <div class="buttons is-centered">
+              <a href="#shop" class="button is-success is-large is-fullwidth">Get Started</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-foot pb-6">
+    <div class="container">
+      <hr>
+      <blockquote class="has-text-centered is-italic">
+        <p class="is-size-4 has-text-grey is-family-secondary">"You want to reverse the damage?<br>Just plant forests of foods."</p>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<div id="parameters" class="box mt-6">
+	<h1 class="title is-3">Parameters:</h1>
+
+	<div class="buttons">
+		<button id="themeToggle" class="button is-medium theme-toggle" aria-label="Change theme">🌙</button>
+		<button id="resetTheme" class="button is-medium">Auto 🌙️️ ☀️</button>
+	</div>
+
+	<div class="buttons">
+		<button id="clearInfos" class="button is-medium is-danger title is-6">Clear personal data</button>
+	</div>
+</div>
+
+<hr>
+<div class="content has-text-centered is-size-7">
+  <p>&copy; 2026 Jardin&nbsp;Odonata – Montréal QC CANADA H2T 1S8</p>
+</div>
+
+<script src="/dist/app.1.js"></script>
+</body>
+</html>
