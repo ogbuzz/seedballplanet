@@ -22871,6 +22871,44 @@ html[data-banner=off] #banner {
   background-color: rgba(0, 0, 0, 0.52);
 }
 
+/* Tooltip "Bientôt disponible" ----------------------------------------- */
+.has-tooltip {
+  position: relative;
+}
+.has-tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--text-main);
+  color: var(--bg-main);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 9999;
+}
+.has-tooltip:hover::after, .has-tooltip.is-tooltip-active::after {
+  opacity: 1;
+}
+
+.navbar-item.is-disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.navbar-menu, .navbar-start, .navbar-end {
+  overflow: visible;
+}
+
+.navbar.is-fixed-top {
+  overflow: visible;
+}
+
 /* ==========================================================================
    STYLES D'IMPRESSION - Optimisation pour l'impression papier
    ========================================================================== */
@@ -22962,3 +23000,5 @@ html[data-banner=off] #banner {
     page-break-inside: avoid;
   }
 }
+
+/*# sourceMappingURL=theme.css.map */

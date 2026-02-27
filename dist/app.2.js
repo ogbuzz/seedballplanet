@@ -89,4 +89,13 @@ window.addEventListener('storage', e => {
 	};
 
 
+// Tooltip clic mobile pour items désactivés
+document.querySelectorAll('.navbar-item.is-disabled').forEach(item => {
+  item.addEventListener('click', e => {
+    e.preventDefault();
+    item.classList.toggle('is-tooltip-active');
+    setTimeout(() => item.classList.remove('is-tooltip-active'), 2000);
+  });
+});
+
 
