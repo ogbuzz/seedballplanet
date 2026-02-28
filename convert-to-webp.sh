@@ -6,7 +6,7 @@
 # =============================================================================
 
 # --- Configuration ---
-IMG_DIR="/home/sylvain/Sites/seedballplanet/img"   # Modifier si ton dossier racine Apache est différent
+IMG_DIR="/var/www/html/img"   # Modifier si ton dossier racine Apache est différent
 MAX_WIDTH=1920                 # Largeur maximale en pixels (images héros plein écran)
 CONTENT_MAX_WIDTH=1200         # Largeur max pour les images de contenu (< 800 Ko originale)
 QUALITY_JPG=82                 # Qualité WebP pour les JPG (85 = excellent compromis)
@@ -106,15 +106,16 @@ find "$IMG_DIR" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \
         RESIZED=""
     fi
 
-    # Calculer le gain
+    # Calculer le gain et supprimer l'original
     if [ -f "$WEBP_FILE" ]; then
         NEW_SIZE=$(du -k "$WEBP_FILE" | cut -f1)
         GAIN=$(( (ORIGINAL_SIZE - NEW_SIZE) * 100 / ORIGINAL_SIZE ))
+        rm "$FILE"
         echo -e "  ${GREEN}✓${NC} $FILENAME${RESIZED}"
-        echo -e "     ${ORIGINAL_SIZE} Ko  →  ${NEW_SIZE} Ko  (${GAIN}% de gain)"
+        echo -e "     ${ORIGINAL_SIZE} Ko  →  ${NEW_SIZE} Ko  (${GAIN}% de gain) — original supprimé"
         ((COUNT++))
     else
-        echo -e "  ${RED}✗ Échec de la conversion :${NC} $FILENAME"
+        echo -e "  ${RED}✗ Échec de la conversion :${NC} $FILENAME — original conservé"
     fi
 
 done
