@@ -22871,6 +22871,19 @@ html[data-banner=off] #banner {
   background-color: rgba(0, 0, 0, 0.52);
 }
 
+.navbar-item.is-disabled {
+  color: var(--text-muted) !important;
+  cursor: not-allowed;
+}
+
+.navbar-menu, .navbar-start, .navbar-end {
+  overflow: visible;
+}
+
+.navbar.is-fixed-top {
+  overflow: visible;
+}
+
 /* Tooltip "Bientôt disponible" ----------------------------------------- */
 .has-tooltip {
   position: relative;
@@ -22881,32 +22894,20 @@ html[data-banner=off] #banner {
   top: calc(100% + 6px);
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--text-main);
-  color: var(--bg-main);
-  padding: 4px 10px;
+  background-color: #fff;
+  color: #222;
+  padding: 6px 12px;
   border-radius: 4px;
+  border: 1px solid #555;
   font-size: 0.75rem;
   white-space: nowrap;
-  opacity: 0;
+  visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.2s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
   z-index: 9999;
 }
 .has-tooltip:hover::after, .has-tooltip.is-tooltip-active::after {
-  opacity: 1;
-}
-
-.navbar-item.is-disabled {
-  opacity: 0.45;
-  cursor: not-allowed;
-}
-
-.navbar-menu, .navbar-start, .navbar-end {
-  overflow: visible;
-}
-
-.navbar.is-fixed-top {
-  overflow: visible;
+  visibility: visible;
 }
 
 /* ==========================================================================
