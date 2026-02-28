@@ -56,12 +56,6 @@ function resetTheme(){
 }
 
 
-document.getElementById("resetTheme").addEventListener("click", () => {
-	resetTheme();
-});
-
-
-
 
 
 //~ <script "bannerControl">
@@ -80,13 +74,6 @@ window.addEventListener('storage', e => {
   }
 });
 
-
-    document.getElementById('clearInfos').onclick = function(){
-			resetTheme();
-		localStorage.clear();
-		viewBanner();
-		// ou localStorage.removeItem('lang-banner-close');
-	};
 
 
 // Tooltip clic mobile pour items désactivés
