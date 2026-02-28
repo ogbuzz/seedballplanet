@@ -1,6 +1,6 @@
 #!/bin/bash
 # =============================================================================
-# convert-to-webp.sh — SeedballPlanet
+# convertisseur-webp.sh — SeedballPlanet
 # Convertit les JPG et PNG en WebP avec redimensionnement automatique
 # Les fichiers originaux sont supprimés après conversion réussie
 # =============================================================================
@@ -8,9 +8,9 @@
 # --- Configuration ---
 IMG_DIR="/home/sylvain/Sites/seedballplanet/img"
 MAX_WIDTH=1920                 # Largeur maximale en pixels (images héros plein écran)
-CONTENT_MAX_WIDTH=1200         # Largeur max pour les images de contenu (< 800 Ko originale)
-QUALITY_JPG=82                 # Qualité WebP pour les JPG (85 = excellent compromis)
-QUALITY_PNG=85                 # Qualité WebP pour les PNG
+CONTENT_MAX_WIDTH=1200         # Largeur max pour les images de contenu (< 500 Ko originale)
+QUALITY_JPG=85                 # Qualité WebP pour les JPG
+QUALITY_PNG=88                 # Qualité WebP pour les PNG
 
 # --- Couleurs pour l'affichage ---
 GREEN='\033[0;32m'
@@ -50,8 +50,6 @@ echo ""
 # --- Compteurs ---
 COUNT=0
 SKIPPED=0
-TOTAL_ORIGINAL=0
-TOTAL_CONVERTED=0
 
 # --- Traitement des images ---
 echo -e "${BLUE}=== Conversion en cours ===${NC}"
@@ -75,7 +73,6 @@ find "$IMG_DIR" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \
 
     # Obtenir les dimensions actuelles
     WIDTH=$(identify -format "%w" "$FILE" 2>/dev/null)
-    HEIGHT=$(identify -format "%h" "$FILE" 2>/dev/null)
     ORIGINAL_SIZE=$(du -k "$FILE" | cut -f1)
 
     # Déterminer la largeur cible selon la taille du fichier
@@ -97,11 +94,9 @@ find "$IMG_DIR" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \
 
     # Conversion avec redimensionnement si nécessaire
     if [ "$WIDTH" -gt "$TARGET_WIDTH" ]; then
-        # Redimensionner ET convertir
         convert "$FILE" -resize "${TARGET_WIDTH}x>" -quality $QUALITY "$WEBP_FILE"
         RESIZED=" (redimensionné de ${WIDTH}px à ${TARGET_WIDTH}px)"
     else
-        # Convertir sans redimensionner
         convert "$FILE" -quality $QUALITY "$WEBP_FILE"
         RESIZED=""
     fi
