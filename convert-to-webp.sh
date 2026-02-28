@@ -6,7 +6,7 @@
 # =============================================================================
 
 # --- Configuration ---
-IMG_DIR="/var/www/html/img"   # Modifier si ton dossier racine Apache est différent
+IMG_DIR="/home/sylvain/Sites/seedballplanet/img"   # Modifier si ton dossier racine Apache est différent
 MAX_WIDTH=1920                 # Largeur maximale en pixels (images héros plein écran)
 CONTENT_MAX_WIDTH=1200         # Largeur max pour les images de contenu (< 800 Ko originale)
 QUALITY_JPG=82                 # Qualité WebP pour les JPG (85 = excellent compromis)
