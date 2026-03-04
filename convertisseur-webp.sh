@@ -4,7 +4,7 @@
 # Convertit les JPG et PNG en WebP avec redimensionnement automatique
 # Les fichiers originaux sont supprimés après conversion réussie
 # =============================================================================
-
+# sudo apt install imagemagick webp
 # --- Configuration ---
 IMG_DIR="/home/sylvain/Sites/seedballplanet/img"
 MAX_WIDTH=1920                 # Largeur maximale en pixels (images héros plein écran)
