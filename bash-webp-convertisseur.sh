@@ -50,7 +50,7 @@ find "$IMG_DIR" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \
     if [ -f "$WEBP_FILE" ]; then
         NEW_SIZE=$(du -k "$WEBP_FILE" | cut -f1)
         GAIN=$(( (ORIGINAL_SIZE - NEW_SIZE) * 100 / ORIGINAL_SIZE ))
-        rm "$FILE"
+        # rm "$FILE"
         echo -e "${GREEN}Fait !${NC} (${ORIGINAL_SIZE}K -> ${NEW_SIZE}K, -${GAIN}%)"
     else
         echo -e "${RED}Échec${NC}"
