@@ -22930,7 +22930,7 @@ html[data-banner=off] #banner {
 }
 
 .navbar-item.is-disabled {
-  opacity: 0.15;
+  opacity: 0.45;
   cursor: not-allowed;
 }
 
