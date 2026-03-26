@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="fr" data-theme="" class="has-navbar-fixed-top">
+
+  <head>
+
+		<script>
+		    function viewBanner() {
+		        try {
+		            const bannerClosed = localStorage.getItem('banner-close') === 'true';
+		            document.documentElement.dataset.banner = bannerClosed ? 'off' : 'on';
+		        } catch (e) {
+		            document.documentElement.dataset.banner = 'on';
+		        }
+		    }
+
+		    viewBanner();
+
+			!function setTheme() {
+			  const root = document.documentElement;
+			  try {
+			    const saved = localStorage.getItem("theme");
+			    const systemDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+			    root.dataset.theme = (saved === "dark" || saved === "light")
+			      ? saved
+			      : (systemDark ? "dark" : "light");
+			  } catch (e) {
+			    root.dataset.theme = "light";
+			  }
+			}();
+
+		</script>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <title>SeedballPlanet – Régénération des écosystèmes et forêts nourricières</title>
+    <meta name="description" content="Restaurez la fertilité de la Terre avec SeedballPlanet. Créez des forêts nourricières grâce à nos boules de graines (seedballs) inspirées de méthodes ancestrales.">
+
+    <!-- URL Canonique (Ajout du / final pour cohérence) -->
+    <link rel="canonical" href="https://www.seedballplanet.com/">
+
+    <!-- Balises Hreflang (Une seule version propre avec www et /) -->
+    <link rel="alternate" hreflang="fr" href="https://www.seedballplanet.com/">
+    <link rel="alternate" hreflang="en" href="https://www.seedballplanet.com/en/">
+    <link rel="alternate" hreflang="x-default" href="https://www.seedballplanet.com/">
+
+    <!-- Open Graph (URLs synchronisées) -->
+    <meta property="og:locale" content="fr_CA">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SeedballPlanet – Forêts Nourricières">
+    <meta property="og:url" content="https://www.seedballplanet.com/">
+    <meta property="og:description" content="Rejoignez-nous pour restaurer la fertilité et la productivité alimentaire de la Terre...">
+	<meta property="og:image" content="https://www.seedballplanet.com/images/og-image-fr.webp">
+
+    <link rel="preload" as="image" href="/img/one-pager/gros-plan-laitues-2017.webp" type="image/webp">
+    <link rel="stylesheet" href="/dist/main.2.css">
+
+  </head>
+
+
+  <body>
+
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="principal">
+  <div class="navbar-brand">
+    <a class="navbar-item logo" href="/"><img src="/SEEDBALLPLANET.3.svg" alt="Logo SeedballPlanet Régénération des écosystèmes et Jardinage facile"></a>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navMenu" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item has-tooltip is-disabled" href="#blogue" data-tooltip="Bientôt disponible" aria-disabled="true" tabindex="-1">Blogue</a>
+      <a class="navbar-item has-tooltip is-disabled" href="#magasin" data-tooltip="Bientôt disponible" aria-disabled="true" tabindex="-1">Magasin</a>
+      <a class="navbar-item has-tooltip is-disabled" href="#membre" data-tooltip="Bientôt disponible" aria-disabled="true" tabindex="-1">Espace Membre</a>
+    </div>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a href="/en/" class="button is-light is-small" hreflang="en" lang="en">EN</a>
+          <button id="themeToggle" class="button is-small theme-toggle" aria-label="Changer de thème">🌙</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<div id="banner" role="complementary" aria-label="Choix de langue" class="notification is-info is-marginless is-radiusless mb-0">
+  <div class="has-text-centered">
+    <p class="is-size-7-mobile is-size-6-tablet is-size-5-desktop">
+      Welcome! Do you want to see the
+      <a href="/en/" hreflang="en" lang="en" class="is-underlined has-text-weight-bold">English version?</a>
+      &nbsp;&nbsp;
+      <button id="close-banner" aria-label="Fermer la bannière" class="delete is-small-mobile is-medium-tablet"></button>
+    </p>
+  </div>
+</div>
+
+
+
+<section id="poussbouls" class="hero" aria-label="Les Poussbouls : le jardinage réinventé">
+<div class="hero-body">
+  <div class="container">
+	<h2 class="title is-2">Le jardinage Seedballs réinventé</h2>
+	<p class="subtitle mt-4">Vous avez déjà entendu parler du « guerrilla gardening » ? Ces boulettes d'argile et de compost remplies de graines qui sont lancées dans des terrains vagues pour y faire pousser des fleurs ? Nos nouvelles Seedballs vont bien au‑delà de cela. Elles sont scientifiquement formulées et contiennent du biochar, du vermicompost, des inoculants microbiens et des poudres de roche minéralisantes — conçues pour transformer presque n’importe quel espace en jardin productif, sans effort. Voici la Seedball la plus avancée au monde.</p>
+
+    <div class="columns is-multiline mt-5">
+
+      <div class="column is-4">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-16by9"><img src="/img/one-pager/3-pots-poussbouls-kale-feuillages-asiatique.webp" alt="Salades et superaliments cultivés avec les Poussbouls" loading="lazy"></figure>
+          </div>
+          <div class="card-content">
+            <h3 class="title is-4">Pour les jardiniers urbains</h3>
+            <div class="content">
+              <p>Faites pousser vos salades, kale, légumes-feuilles asiatiques et fines herbes du printemps jusqu'à la fin de l'été. Sur un balcon, dans un pot, sur un bout de terrain cultivé minimalement — la Super-Poussboul s'adapte à votre espace. Pas besoin d'expérience, pas besoin d'outils. Une Super-Poussboul, un peu de terre, de l'eau, et la nature fait le reste.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column is-4">
+		<div class="card">
+			<div class="card-image">
+			  <figure class="image is-16by9">
+			    <img src="/img/one-pager/fleurs et aneth.webp" alt="Vue d'ensemble d'un de nos champs d'essais avec des légumes et des fleurs pour les pollinisateurs" loading="lazy">
+			  </figure>
+			</div>
+			<div class="card-content">
+				<h3 class="title is-4">Pour les fleurs à Pollinisateurs</h3>
+				<div class="content">
+					<p>Les fleurs pour Papillons et Abeilles et autres pollinisateurs et oiseaux peuvent êtres plantées presqu'à tout moment de la saison. Ici on voit un champs qui a été planté début Juillet en 2017 lors d'une année très sèche et sans irrigation. Dans ce même essai on a fait pousser aussi beaucoups de salades et de fines-herbes et de légumes asiatiques.</p>
+				</div>
+			</div>
+		</div>
+      </div>
+      
+      <div class="column is-4">
+		<div class="card">
+			<div class="card-image">
+				<figure class="image">
+				<img src="/img/one-pager/bouquet-super-salades.webp" alt="Bouquet de salades de gourmet récolté à partir d'une Poussboul" loading="lazy">
+				</figure>
+			</div>
+			<div class="card-content">
+				<h3 class="title is-4">Pour ceux qui veulent cultiver</h3>
+				<div class="content">
+					<p>Au Québec on peut planter de avril à août les salades et les légumes feuilles asiatiques ainsi que les kales et plusieurs fines-herbes. Avec les Seedballs on plante rapidement dans une disposition <strong>facile à désherber</strong> (en poquets). </p>
+				</div>
+			</div>
+		</div>
+      </div>
+      
+
+      <div class="column is-4">
+        <div class="card">
+          <div class="card-image">
+			<figure class="image is-16by9"><img src="/img/one-pager/mont-royal-falaise.webp" alt="Falaise du Mont-Royal — emplacements propices à la plantation de Poussbouls" loading="lazy"></figure>
+			</div>
+          <div class="card-content">
+            <h3 class="title is-4">Pour la restauration écologique</h3>
+            <div class="content">
+              <p>Nos Super-Poussbouls Carbone, à haute teneur en biochar , <strong>prévues pour cet automne</strong>, séquestrent une quantité significative de CO₂ dans le sol tout en aidant les plantes indigènes à mieux résister aux prédateurs. Idéales pour restaurer les sentiers de randonnée, les berges des cours d'eau, et pour planter de l'ail des bois, du ginseng et des espèces indigènes dans les érablières.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+		<div class="column is-8">
+		  <div class="card">
+		    <!--
+		    <div class="card-image">
+		      <figure class="image is-16by9"><img src="" alt="Abondance de salades, fines herbes et légumes asiatiques cultivés avec des seedballs." loading="lazy"></figure>
+		    </div>
+		    -->
+		    <div class="card-content">
+		      <h2 class="title is-3 has-text-danger">
+		        Pour l’urgence alimentaire
+		      </h2>
+		      <div class="content">
+		        
+		        <p>
+		          <strong>SeedballPlanet</strong> développe une solution naturelle et évolutive : 
+		          les <strong>SuperFood Seedballs</strong> — un modèle accessible pour une production alimentaire régénératrice et nutritive, 
+		          en partant du sol de chacun.
+		        </p>
+		        
+		        <p>
+		          Après plusieurs années de recherche et de prototypage, 
+		          nous avons déjà créé des outils capables de produire <strong>des milliers de SuperFood Seedballs</strong> à la main.
+		        </p>
+		        
+		        <p>
+		          Nos Seedballs se distinguent par leur <strong>forte teneur en biochar</strong>, 
+		          qui leur permet de <strong>séquestrer durablement le CO₂</strong> tout en améliorant la structure et la fertilité du sol.
+		        </p>
+		        
+		        <p>
+		          Notre prochain objectif est clair : <strong>passer à l’échelle industrielle et écologique</strong>, 
+		          grâce à des machines modulaires capables de produire <strong>des millions de Seedballs chaque saison</strong>, 
+		          afin de <strong>restaurer la sécurité alimentaire, le climat et les écosystèmes</strong> partout dans le monde.
+		        </p>
+		        
+		      </div>		
+		    </div>
+		  </div>
+		</div>
+      
+      
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+<section id="join" class="hero is-success">
+
+<!--
+  <img 
+    src="/img/one-pager/gros-plan-laitues-2017.webp" 
+    alt="Culture de laitues biologiques en forêt nourricière créée avec des Poussbouls au Québec"
+    class="is-16by9"
+    width="1920" 
+    height="1080"
+    loading="eager"
+    fetchpriority="high"
+  >
+-->
+
+  
+<div class="hero-body">
+	
+	<div class="container">
+		<h1 class="title is-1">Cultivons un monde comestible ensemble</h1>
+		<h2 class="subtitle is-3">Avec les Seedballs de SuperFoods, nous réinventons les Forêts‑Nourricières</h2>
+		
+		<p>
+		SeedballPlanet unit la sagesse ancienne des jardiniers à la vision régénératrice du monde moderne.
+		</p>
+		
+		<p>
+		Apprenez. Fabriquez vos propres seedballs. Lancez vos mini‑pépinières.  
+		Cultivez des SuperFoods — partout, du balcon jusqu’à la forêt.
+		</p>
+		
+		<a class="button is-warning is-large mt-5 is-responsive">Rejoindre la communauté 🌱</a>
+		
+		<p class="mt-4">
+		Partagez vos créations et contribuez à l’écriture du premier manuel libre des Forêts‑Nourricières —  
+		pour régénérer la planète et faire revivre une véritable culture alimentaire vivante.
+		</p>
+	</div> 
+  
+</div>
+
+  <div class="hero-foot">
+
+  </div>
+
+</section>
+
+
+
+
+<section id="ancestral" class="section" aria-label="Racines ancestrales et Terra Preta">
+  <div class="container">
+    <h2 class="title is-2">Racines ancestrales&nbsp;: une sagesse millénaire</h2>
+
+    <div class="columns is-variable is-8 is-vcentered mt-4">
+
+      <div class="column is-7">
+        <div class="content is-medium">
+          <p>Pendant des milliers d’années, bien avant l’agriculture industrielle, les peuples autochtones de l’Amazonie ont intentionnellement transformé leur environnement en forêts nourricières abondantes. Les Kayapo et d’autres peuples précolombiens ont planté et entretenu des corridors de plantes comestibles le long de leurs sentiers, ont dispersé des graines dans des sols enrichis et ont façonné ce que nous appelons aujourd’hui la « forêt amazonienne naturelle » — qui est, en grande partie, un jardin humain vieux de plusieurs siècles. Ils semaient les graines à la main — à la volée, en poquets ou sur des buttes — plantaient des boutures, transplantaient des pousses et désherbaient uniquement pour rétablir l’équilibre.</p>
+
+          <p>La preuve la plus fascinante de ce savoir-faire ancestral est la <strong>Terra Preta</strong> — littéralement « terre noire » en portugais. Ces sols d'une fertilité exceptionnelle, découverts à travers tout le bassin amazonien, sont le résultat direct de l'incorporation intentionnelle de charbon végétal, d'os calcinés et de matière organique dans le sol par ces peuples. Contrairement aux sols tropicaux naturellement pauvres qui les entourent, la Terra Preta est restée extraordinairement fertile après plus de 2 000 ans — et continue de se régénérer d'elle-même.</p>
+
+          <p>
+			Ces gestes millénaires rappellent qu’il suffit d’observer, de respecter et de collaborer avec la Terre pour en faire renaître l’abondance. 
+			C'est exactement ce principe que SeedballPlanet réinvente avec les <strong>Poussbouls</strong>&nbsp;: le biochar canadien que nous utilisons dans notre formulation de <strong>Seedballs</strong> est l'héritier direct de cette sagesse amazonienne, validé aujourd'hui par la science moderne.</p>
+        </div>
+      </div>
+
+      <div class="column is-5">
+        <figure class="image">
+			<img src="/img/one-pager/Essais-Sylvain-Plantation-Poussbouls-2018.webp" alt="Essais de plantation de Poussbouls en 2018" loading="lazy">
+			<figcaption class="has-text-centered is-size-7 mt-2">Sylvain en train de planter des Poussboul. Photo par Nadia Bouaicha.</figcaption>			
+			</figure>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="science" class="hero" aria-label="La science derrière les Poussbouls">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-2">La science derrière les Poussbouls</h2>
+      <p class="subtitle mt-4">Une Poussboul, c'est une seedball améliorée et optimisée grâce à la technologie moderne. Tout en restant relativement simple à fabriquer, c'est un mélange complet de fertilisants et de micro-organismes — conçu pour donner à chaque graine les meilleures conditions possibles pour germer et prospérer. Tous les ingrédients entrant dans la composition des Poussbouls sont certifiés acceptables pour l'agriculture biologique.</p>
+
+      <div class="columns is-variable is-6 mt-5">
+
+        <div class="column">
+          <div class="box">
+            <h3 class="title is-4">La triple activation bio-dynamique</h3>
+            <div class="content">
+              <p>La formulation Super-Poussboul combine trois niveaux d'activation biologique&nbsp;: des micro-organismes bénéfiques issus d'inoculants fabriqués au Québec, du vermicompost de haute qualité riche en bactéries et champignons mycorhiziens sans danger pour les enfants et les animaux, et des poudres de roches minéralisantes qui reconstituent les oligo-éléments essentiels souvent absents des sols urbains et dégradés.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="box">
+            <h3 class="title is-4">Le biochar canadien — l'héritier moderne de la Terra Preta</h3>
+            <div class="content">
+              <p>Le biochar que nous utilisons est un charbon végétal canadien de très haute qualité qui crée dans le sol une structure poreuse permanente. Il agit comme un hôtel pour les micro-organismes bénéfiques, améliore la rétention d'eau et séquestre le carbone atmosphérique sur des centaines d'années — exactement comme le faisait la Terra Preta il y a plus de 2 000 ans.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="columns is-variable is-6">
+
+        <div class="column">
+          <div class="box">
+            <h3 class="title is-4">Une croissance supérieure dès l'émergence</h3>
+            <div class="content">
+              <p>Notre mix d'ingrédients fertilisants produit une croissance remarquablement forte dès les premiers jours — surpassant en efficacité les formulations concurrentes. Ceci est cohérent avec les conclusions du Dr. Charles Ikenna Nwankwo, chercheur à l'Université de Hohenheim en Allemagne, dont la thèse démontre que les deux premières semaines de croissance sont déterminantes pour le succès à long terme de la plante.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="box">
+            <h3 class="title is-4">Une équipe scientifique en expansion</h3>
+            <div class="content">
+              <p>En 2026, nous avons amorcé des négociations avec un microbiologiste expert en sciences des sols vivants, et nous sommes à la recherche de biologistes spécialisés en plantes indigènes pour appuyer le développement de nos Super-Poussbouls Carbone. Notre objectif&nbsp;: atteindre une émergence optimale des graines pour chaque variété et chaque environnement.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="columns is-variable is-6">
+        <div class="column">
+          <div class="box">
+            <h3 class="title is-4">Des outils de fabrication innovants</h3>
+            <div class="content">
+              <p>Après des années de développement, nous avons mis au point des outils de fabrication peu coûteux capables de produire des milliers de Poussbouls par jour. Notre vision&nbsp;: rendre ces outils et méthodes accessibles à toutes les organisations écologiques, écoles, petits fermiers et individus passionnés d'écologie qui souhaitent produire leurs propres seedballs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+			<figure class="image">
+				<img src="/img/one-pager/ingrédients-2026-poussboul.webp" alt="Les 16 ingrédients de la Super-Poussboul 2026" loading="lazy">
+				<figcaption class="has-text-centered is-size-7 mt-2">Les 16 ingrédients de la recette Super-Poussboul pour le jardinage urbain</figcaption>
+			</figure>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="resultats" class="section" aria-label="Des résultats réels, à travers le monde et ici au Québec">
+  <div class="container">
+    <h2 class="title is-2">Des résultats réels, à travers le monde et ici au Québec</h2>
+    <p class="subtitle mt-4">Les seedballs ne sont pas une tendance passagère. Des universités, des gouvernements et des entreprises à travers le monde ont démontré leur efficacité. SeedballPlanet arrive sur ce marché avec une formulation encore plus avancée — et une connaissance directe de ces recherches.</p>
+
+    <div class="columns is-variable is-6 mt-5">
+
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <h3 class="title is-5">🇳🇪 Niger — Université de Hohenheim, Allemagne</h3>
+            <p>Plus de 2 000 essais dans 65 villages ont démontré une augmentation de 30% du rendement en céréales malgré des sols pauvres et la sécheresse. Le Dr. Charles Ikenna Nwankwo, chercheur principal de cette étude, a collaboré directement avec nous pour notre formulation de 2017.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <h3 class="title is-5">🇬🇧 Angleterre — un marché mature et inspirant</h3>
+            <p>La compagnie Seedballs UK emploie 22 personnes et produit entre 3 et 5 millions de seedballs annuellement. En 2022, la BBC leur a acheté 1 million de seedballs pour une émission sur l'écologie. Notre formulation dépasse en performance ce qui est actuellement offert sur ce marché.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="columns is-variable is-6">
+
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <h3 class="title is-5">🇺🇸 États-Unis — un marché en pleine expansion</h3>
+            <p>Le marché américain des seedballs est évalué à plus d'un demi-milliard de dollars par année et continue de croître. C'est un indicateur clair du potentiel nord-américain que SeedballPlanet est bien positionné à saisir.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <h3 class="title is-5">🇨🇦 Québec — un marché pratiquement vierge</h3>
+            <p>À notre connaissance, la production commerciale de seedballs au Québec ne dépasse pas 10 000 unités par année. SeedballPlanet arrive avec une technologie de pointe, une production locale et une stratégie structurée — une opportunité unique de devenir la référence québécoise de cette industrie en pleine croissance.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+	<h3 class="title is-4 mt-6">Le jardinage urbain comme geste écologique </h3>
+	<h4 class="subtitle is-4">Devenez en santé pour le reste de votre vie pour très peu d'argent&nbsp;!</h4>
+	<div class="columns is-variable is-6 mt-4">
+	
+		<div class="column is-7">
+			<div class="content is-medium">
+				<p>Cultiver ses propres superaliments en ville, c’est bien plus qu’un hobby — c’est un acte écologique concret. Chaque laitue ou légume-feuille gorgé de vitamines poussé sur un balcon, c’est un aliment qui n’a pas traversé des milliers de kilomètres avant d’arriver dans votre assiette. Les aliments fraîchement cueillis conservent l’intégralité de leurs nutriments et de leurs saveurs — une différence que vous goûtez dès la première bouchée. Et chaque pot, chaque bac, chaque coin de terre cultivé contribue au verdissement et à la biodiversité de nos quartiers urbains.</p>
+			</div>
+		</div>
+		
+		<div class="column is-5">
+			<figure class="image">
+				<img src="/img/one-pager/bouquet-super-salades.webp" alt="Bouquet de salades de gourmet récolté à partir d'une Poussboul" loading="lazy">
+				<figcaption class="has-text-centered is-size-7 mt-2">Bouquet de salades de gourmet récolté à partir d'une Poussboul</figcaption>
+
+			</figure>
+		</div>
+	
+	</div>
+
+
+
+    <h3 class="title is-4 mt-6">Applications écologiques au Québec</h3>
+    <h4 class="subtitle is-4">Nos Super&ndash;Poussbouls Carbone</h4>
+    <div class="columns is-variable is-6 mt-4">
+
+      <div class="column is-7">
+        <div class="content is-medium">
+          <p>Des possibilités concrètes pour la restauration des écosystèmes québécois&nbsp;:</p>
+          <ul>
+            <li>Les <strong>sentiers de randonnée</strong> pour redonner de la beauté et de la biodiversité à nos parcs</li>
+            <li>Les <strong>berges des cours d'eau</strong> pour stabiliser et revitaliser les rives dégradées</li>
+            <li>Les <strong>érablières</strong> pour planter de l'ail des bois, du ginseng et d'autres espèces forestières indigènes</li>
+            <li>Le <strong>Mont-Royal et les montagnes de ski</strong> pour contribuer à la restauration de la biodiversité et à la lutte contre l'érosion</li>
+            <li>Les <strong>compagnies minières</strong> pour aider à restaurer les territoires affectés par l'exploitation et contribuer à bâtir des ponts durables avec les communautés autochtones</li>
+            <li>Les <strong>entreprises</strong> souhaitant offrir une solution de responsabilité environnementale concrète, mesurable et engageante</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="column is-5">
+        <figure class="image">
+			<img src="/img/one-pager/poussboul-ruelle-2017.webp" alt="Poussbouls dans une ruelle de Montréal en 2017" loading="lazy">
+			<figcaption class="has-text-centered is-size-7 mt-2">Poussbouls dans une ruelle de Montréal en 2017</figcaption>
+		</figure>
+      </div>
+
+    </div>
+
+    <div class="has-text-centered mt-6">
+      <a href="#contact" class="button is-info is-large is-responsive">Parlez-nous de votre projet<br class="is-hidden-tablet"> de restauration écologique</a>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="histoire" class="hero" aria-label="L'histoire de SeedballPlanet">
+	
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-2">L'histoire de SeedballPlanet — une passion québécoise à portée mondiale</h2>
+      <p class="subtitle mt-4">Bonjour, je m'appelle Sylvain Picker, fondateur de Jardin Odonata et créateur des Poussbouls. Merci d'encourager l'entrepreneuriat québécois.</p>
+		<div class="columns has-text-centered box">
+	
+	      <div class="column">
+	        <p class="title is-2">10 000+</p>
+	        <p>Seedballs testées depuis 2017</p>
+	      </div>
+	
+	      <div class="column">
+	        <p class="title is-2">3+</p>
+	        <p>Scientifiques collaborateurs — et l'équipe s'agrandit en 2026</p>
+	      </div>
+	
+	      <div class="column">
+	        <p class="title is-2">20 ans</p>
+	        <p>D'expérience en agriculture et foresterie</p>
+	      </div>
+	
+	      <div class="column">
+	        <p class="title is-2">11 ans</p>
+	        <p>D'expérience en instrumentation de laboratoire scientifique</p>
+	      </div>
+	
+	    </div>
+
+      <div class="columns is-variable is-8 is-vcentered mt-4">
+
+        <div class="column is-4">
+		  <figure class="image">
+		    <img src="/img/one-pager/sylvain-plantation-2017-2.webp" alt="Sylvain Picker, fondateur de SeedballPlanet, en plantation 2017" loading="lazy">
+		    <figcaption class="has-text-centered is-size-7 mt-2">Sylvain en plantation, 2017. Photo par Nadia Bouaicha.</figcaption>
+		  </figure>
+		  <figure class="image mt-4">
+		    <img src="/img/one-pager/fleurs et aneth.webp" alt="Vue d'ensemble d'un de nos champs d'essais avec des légumes et des fleurs pour les pollinisateurs" loading="lazy">
+		    <figcaption class="has-text-centered is-size-7 mt-2">Champ d'essais avec légumes et fleurs pour les pollinisateurs</figcaption>
+		  </figure>
+		  <figure class="image mt-4">
+			<img src="/img/one-pager/aneth mesclun et légumes asiatiques.webp" alt;"Mesclun salade multicolore de feuillages délicieux dans un champ Bio" loading="lazy">
+			<figcaption class="has-text-centered is-size-7 mt2">Salades Mesclun multicolore délicieux feuillages semés par Poussboul Seedballs dans un champ Bio</figcaption>
+		  </figure>
+		</div>
+
+        <div class="column is-8">
+          <div class="content is-medium">
+
+            <h3 class="title is-4">Un parcours ancré dans la terre</h3>
+            <p>Après une vingtaine d'années à différents postes en agriculture et en foresterie, et onze ans comme technicien en instrumentation scientifique, j'ai voulu mettre cette expérience au service d'un projet qui me tient profondément à cœur&nbsp;: rendre la nature productive, accessible et amusante pour tous.</p>
+
+            <h3 class="title is-4">La naissance des Poussbouls</h3>
+            <p>En 2017, avec la collaboration de deux scientifiques dont le Dr. Charles Ikenna Nwankwo de l'Université de Hohenheim en Allemagne, j'ai formulé une seedball véritablement performante. Nous avons testé près de 10 000 seedballs dans des environnements variés — champs, ruelles, balcons et espaces intérieurs — avec des résultats spectaculaires. Ces années de recherche intensive ont mené à la création de la Super-Poussboul, la seedball la plus avancée au monde.</p>
+
+            <h3 class="title is-4">Une innovation outillée</h3>
+            <p>Mon expérience technique m'a également permis de concevoir des outils de fabrication peu coûteux et efficaces, capables de produire des milliers de Poussbouls par jour. Ce savoir-faire est un avantage compétitif unique — et la base de notre vision&nbsp;: rendre la fabrication de Super-Poussbouls accessible à toute organisation écologique, école ou communauté qui souhaite produire ses propres seedballs, partout dans le monde.</p>
+
+            <h3 class="title is-4">Maintenant retraité, pleinement engagé</h3>
+            <p>Les Poussbouls sont mon projet passion de retraite — et c'est précisément ce qui me permet de lui consacrer le temps, la rigueur et la patience qu'il mérite. SeedballPlanet arrive sur un marché québécois pratiquement vierge avec l'ambition de devenir le premier producteur commercial structuré de la province — et éventuellement, un joueur mondial.</p>
+
+            <blockquote>
+              <p>« Je suis probablement la personne la plus expérimentée au Québec concernant les seedballs. Mon objectif est simple&nbsp;: créer les boulettes de semences les plus avancées au monde, et les mettre entre les mains de tous ceux qui veulent nourrir la planète. »</p>
+              <p><strong>— Sylvain Picker, fondateur</strong></p>
+            </blockquote>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="partenaires" class="section" aria-label="Rejoignez le mouvement — premiers partenaires pilotes">
+  <div class="container">
+    <h2 class="title is-2">Rejoignez le mouvement — nous cherchons nos premiers partenaires</h2>
+    <p class="subtitle mt-4">SeedballPlanet est en phase de recherche et développement. C'est le moment idéal pour faire partie de l'aventure dès le début — que vous soyez un jardinier urbain curieux, une municipalité visionnaire, un parc national, un agriculteur ou un forestier, une école ou une entreprise soucieuse de son impact environnemental.</p>
+
+    <div class="columns is-variable is-6 mt-5">
+
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <h3 class="title is-4">🌿 Pour les jardiniers et particuliers</h3>
+            <div class="content">
+              <p>Vous voulez tester les Poussbouls avant le lancement officiel ? Nous cherchons des jardiniers passionnés prêts à cultiver leurs salades et superfoods avec nos premières formulations et à partager leurs résultats. Vos retours nous aideront à peaufiner nos produits avant de commencer la production à grande échelle. En participant, vous devenez co-créateurs de la Poussboul de demain.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <h3 class="title is-4">🏛️ Pour les institutions et entreprises</h3>
+            <div class="content">
+              <p>Vous gérez un parc, une municipalité, une érablière ou une entreprise avec des objectifs environnementaux ? Nos Super-Poussbouls Carbone offrent un double bénéfice remarquable&nbsp;: elles stockent des quantités importantes de CO₂ dans le sol tout en bâtissant une fertilité durable sur le long terme — le biochar reste actif dans le sol pendant des centaines d'années. Nous cherchons des partenaires pilotes pour tester ces formulations sur des projets concrets de restauration écologique.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="box mt-6">
+      <h3 class="title is-4">🌍 Une vision mondiale accessible</h3>
+      <div class="content is-medium">
+        <p>Grâce à nos outils de fabrication innovants et à notre formulation avancée, nous souhaitons rendre la production de Super-Poussbouls accessible à des organisations écologiques, des écoles, des communautés et des petits producteurs partout dans le monde — pour que chaque région puisse cultiver ses propres seedballs adaptées à ses espèces locales et à ses besoins écologiques. Notre motivation est simple&nbsp;: mettre cette technologie entre les mains de tous ceux qui veulent nourrir la planète et restaurer ses écosystèmes.</p>
+      </div>
+    </div>
+
+    <div class="has-text-centered mt-6">
+      <a href="#contact" class="button is-info is-large is-responsive">Rejoindre l'aventure<br class="is-hidden-tablet"> et contribuer à développer la Poussboul</a>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="contact" class="hero" aria-label="Faites partie de l'aventure — communauté SeedballPlanet">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-2">Faites partie de l'aventure — rejoignez la communauté SeedballPlanet</h2>
+
+      <div class="content is-medium mt-4">
+        <p>Soyez parmi les premiers informés du lancement des Poussbouls au printemps 2026. Recevez nos conseils de jardinage écologique, suivez l'évolution de nos essais terrain au Québec et découvrez en avant-première nos nouveaux produits et partenariats.</p>
+        <p>Nos Poussbouls sont déjà très performantes — et nous cherchons des partenaires passionnés pour nous aider à les perfectionner encore davantage. En échange de votre participation et de vos retours via un court questionnaire sur vos résultats, vous serez parmi les premiers à recevoir nos seedballs, à un prix de lancement préférentiel.</p>
+      </div>
+
+      <div class="columns is-variable is-6 mt-5">
+
+        <div class="column">
+          <div class="box">
+            <h3 class="title is-4">🌱 Vous êtes jardinier urbain ?</h3>
+            <div class="content">
+              <p>Rejoignez nos partenaires pilotes particuliers et faites pousser vos propres superaliments — salades, kale, fines herbes et bien plus — sur votre balcon, dans un pot ou dans votre jardin. Pas besoin d'expérience, pas besoin d'outils. Juste une Super-Poussboul, un peu de terre et de l'eau.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="box">
+            <h3 class="title is-4">🏛️ Vous représentez une organisation ?</h3>
+            <div class="content">
+              <p>Rejoignez nos partenaires pilotes institutionnels et testez nos Super-Poussbouls Carbone sur vos projets de restauration écologique. Ensemble, nous documenterons les résultats et bâtirons les bases d'une collaboration durable.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="notification is-warning mt-6 has-text-centered">
+        <p class="is-size-4 mb-4">Vous avez un projet, vous souhaitez devenir partenaire pilote, <br>ou vous avez simplement des questions sur les Poussbouls&nbsp;? <br>On adore jaser de tout ça</p>
+        <a class="button is-success is-large is-responsive" href="mailto:info@seedballplanet.com">info@seedballplanet.com</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-info">
+    <div class="container p-5">
+		<nav class="" aria-label="Navigation des sections">
+		    <ul class="buttons is-centered">
+		      <li><a href="#ancestral" class="button is-light is-small">Racines ancestrales</a></li>
+		      <li><a href="#poussbouls" class="button is-light is-small">Les Poussbouls</a></li>
+		      <li><a href="#science" class="button is-light is-small">La Science</a></li>
+		      <li><a href="#resultats" class="button is-light is-small">Résultats</a></li>
+		      <li><a href="#histoire" class="button is-light is-small">Notre Histoire</a></li>
+		      <li><a href="#partenaires" class="button is-light is-small">Partenaires</a></li>
+		      <li><a href="#contact" class="button is-light is-small">Contact</a></li>
+		    </ul>
+		</nav>
+    </div>
+</section>
+
+<footer class="footer" aria-label="Pied de page SeedballPlanet">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p><strong>SeedballPlanet.com</strong> est une production de <strong>Jardin Odonata</strong>, entreprise québécoise fondée et opérée par Sylvain Picker.</p>
+      <p>Montréal, Québec, Canada H2T 1S8</p>
+      <p class="is-size-7 mt-4">Fait au Québec, pour le monde entier. &nbsp;·&nbsp; <a href="mailto:info@seedballplanet.com">info@seedballplanet.com</a></p>
+      <p class="is-size-7 mt-2">&copy; 2026 Jardin Odonata</p>
+    </div>
+  </div>
+</footer>
+
+
+<script src="/dist/app.2.js"></script>
+</body>
+
+</html>
